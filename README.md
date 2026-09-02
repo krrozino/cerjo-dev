@@ -25,7 +25,7 @@ O cerjo.dev funciona como apresentação profissional, portfólio de projetos e 
 - sitemap e robots.txt
 - favicon e web manifest
 - acessibilidade básica e suporte a `prefers-reduced-motion`
-- integração preparada para Vercel Web Analytics
+- integração com Vercel Web Analytics
 
 ## Projetos apresentados
 
