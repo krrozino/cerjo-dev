@@ -14,7 +14,7 @@ O cerjo.dev funciona como apresentação profissional, portfólio de projetos e 
 
 - apresentação profissional
 - serviços de desenvolvimento web
-- projetos e produtos em desenvolvimento
+- projetos públicos, projetos reais e pesquisa experimental
 - tecnologias utilizadas
 - processo de trabalho
 - FAQ comercial
@@ -41,12 +41,60 @@ Landing page conceitual para academia, criada como case de UI/UX e desenvolvimen
 
 ### DevBoard
 
-Produto de observabilidade de projetos de software em desenvolvimento, com foco em transformar atividade do GitHub em sinais de saúde e atenção.
+Produto de observabilidade de projetos de software em desenvolvimento, com foco em transformar atividade do GitHub em sinais de saúde, atenção e contexto acionável.
 
 - Next.js
 - TypeScript
 - PostgreSQL
 - Drizzle ORM
+
+### StageTrack
+
+Sistema web para acompanhamento de estágios supervisionados, com autenticação, PostgreSQL/Supabase, RLS e evolução orientada por domínio.
+
+- Next.js
+- TypeScript
+- Supabase
+- PostgreSQL
+- Row Level Security
+
+### Plataforma de Gestão para Academia
+
+Projeto real web/mobile para gestão de alunos, prescrição de treinos, registro de cargas e progressão de Powerlifting, incluindo suporte offline no aplicativo do aluno.
+
+- Next.js
+- React Native / Expo
+- Firebase
+- PWA
+- testes automatizados
+
+O repositório permanece privado.
+
+### Plataforma de Nutrição & Performance
+
+Produto real em desenvolvimento com painel profissional, aplicativo do paciente, domínio compartilhado e arquitetura preparada para integrações e recursos de IA.
+
+- Next.js
+- Expo
+- TypeScript
+- Firebase
+- Vitest
+
+O repositório permanece privado.
+
+### Sports Motion Analyzer
+
+Projeto experimental de visão computacional aplicada ao esporte. O módulo atual trabalha Powerlifting/Squat, análise offline, qualidade de captura, tracking de barra, segmentação temporal e métricas biomecânicas.
+
+- Python
+- MediaPipe
+- OpenCV
+- análise de dados
+- biomecânica computacional
+
+O repositório permanece privado.
+
+O Pádua FloodSim está em fase inicial e será adicionado à vitrine quando possuir uma versão demonstrável.
 
 ## Social preview
 
