@@ -1,30 +1,87 @@
 # cerjo.dev
 
-Portfólio pessoal e profissional de desenvolvimento web.
+Portfólio pessoal e profissional de desenvolvimento web de Sérgio Izaque.
 
-**Produção:** https://cerjo.dev
+**Produção:** https://cerjo.dev  
+**Instagram:** https://www.instagram.com/cerjo.dev/  
+**GitHub:** https://github.com/krrozino
 
-## Sobre
+## Objetivo
 
-Este repositório contém o código do portfólio cerjo.dev, criado para apresentar projetos, serviços, tecnologias e formas de contato.
+O cerjo.dev funciona como apresentação profissional, portfólio de projetos e ponto de contato para novos trabalhos.
 
-## Destaques
+## O que o site apresenta
 
 - apresentação profissional
 - serviços de desenvolvimento web
-- projetos em destaque
-- produtos em desenvolvimento
+- projetos e produtos em desenvolvimento
 - tecnologias utilizadas
 - processo de trabalho
 - FAQ comercial
 - layout responsivo
-- SEO básico com canonical para `https://cerjo.dev`
+- SEO técnico básico
+- Open Graph / Twitter Cards
+- dados estruturados com Schema.org
+- sitemap e robots.txt
+- favicon e web manifest
+- acessibilidade básica e suporte a `prefers-reduced-motion`
+- Vercel Web Analytics preparado no HTML
 
 ## Projetos apresentados
 
-- **Vértice Performance** — landing page conceitual para academia
-- **DevBoard** — produto de observabilidade de projetos de software em desenvolvimento
+### Vértice Performance
+
+Landing page conceitual para academia, criada como case de UI/UX e desenvolvimento front-end.
+
+- React
+- TypeScript
+- Vite
+- design responsivo
+
+### DevBoard
+
+Produto de observabilidade de projetos de software em desenvolvimento, com foco em transformar atividade do GitHub em sinais de saúde e atenção.
+
+- Next.js
+- TypeScript
+- PostgreSQL
+- Drizzle ORM
 
 ## Deploy
 
-Hospedado na Vercel. A intenção é manter a branch `main` conectada ao projeto de produção para deploy automático a cada atualização.
+O projeto está conectado ao repositório `krrozino/cerjo-dev` na Vercel.
+
+A branch de produção é:
+
+```text
+main
+```
+
+Fluxo atual:
+
+```text
+GitHub main
+    ↓
+Vercel
+    ↓
+cerjo.dev
+```
+
+Alterações enviadas para `main` geram deploy automático de produção.
+
+## Estrutura
+
+```text
+.
+├── index.html
+├── favicon.svg
+├── og-image.jpg
+├── site.webmanifest
+├── robots.txt
+├── sitemap.xml
+└── README.md
+```
+
+## Status
+
+Em evolução contínua. Novos cases e melhorias são adicionados conforme os projetos ganham versões demonstráveis.
