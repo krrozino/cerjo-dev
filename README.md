@@ -21,7 +21,7 @@ O cerjo.dev funciona como apresentação profissional, portfólio de projetos e 
 - layout responsivo
 - SEO técnico básico com canonical
 - metadados Open Graph e Twitter
-- social preview 1200×630 gerado com `@vercel/og`
+- social preview 1200×630 com arte própria
 - dados estruturados com Schema.org
 - sitemap e robots.txt
 - favicon e web manifest
@@ -50,7 +50,7 @@ Produto de observabilidade de projetos de software em desenvolvimento, com foco 
 
 ## Social preview
 
-O card usado por WhatsApp, LinkedIn, Discord e outras plataformas é gerado pela função `api/og.js` com `@vercel/og` em 1200×630.
+O card usado por WhatsApp, LinkedIn, Discord e outras plataformas utiliza uma arte própria em proporção Open Graph `1200×630`.
 
 A URL pública permanece estável em:
 
@@ -58,7 +58,7 @@ A URL pública permanece estável em:
 https://cerjo.dev/og-image.jpg
 ```
 
-O `vercel.json` reescreve essa rota para a função de geração do card, permitindo atualizar a identidade visual por código sem versionar um arquivo binário pesado.
+O `vercel.json` encaminha essa URL para `api/og.js`, que entrega os bytes JPEG da arte. Assim, os metadados sociais continuam usando uma URL simples no domínio oficial sem depender de serviços externos de imagem.
 
 ## Deploy
 
@@ -89,6 +89,7 @@ Alterações enviadas para `main` geram deploy automático de produção.
 ├── api/
 │   └── og.js
 ├── index.html
+├── og-image.jpg
 ├── favicon.svg
 ├── site.webmanifest
 ├── robots.txt
