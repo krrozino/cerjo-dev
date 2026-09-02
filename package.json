@@ -1,9 +1,5 @@
 {
   "name": "cerjo-dev",
   "private": true,
-  "type": "module",
-  "dependencies": {
-    "@vercel/og": "^0.8.5",
-    "react": "^19.1.1"
-  }
+  "type": "module"
 }
