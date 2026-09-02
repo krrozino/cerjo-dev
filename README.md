@@ -19,13 +19,13 @@ O cerjo.dev funciona como apresentação profissional, portfólio de projetos e 
 - processo de trabalho
 - FAQ comercial
 - layout responsivo
-- SEO técnico básico
-- Open Graph / Twitter Cards
+- SEO técnico básico com canonical
+- metadados Open Graph e Twitter
 - dados estruturados com Schema.org
 - sitemap e robots.txt
 - favicon e web manifest
 - acessibilidade básica e suporte a `prefers-reduced-motion`
-- Vercel Web Analytics preparado no HTML
+- integração preparada para Vercel Web Analytics
 
 ## Projetos apresentados
 
@@ -75,7 +75,6 @@ Alterações enviadas para `main` geram deploy automático de produção.
 .
 ├── index.html
 ├── favicon.svg
-├── og-image.jpg
 ├── site.webmanifest
 ├── robots.txt
 ├── sitemap.xml
@@ -84,4 +83,4 @@ Alterações enviadas para `main` geram deploy automático de produção.
 
 ## Status
 
-Em evolução contínua. Novos cases e melhorias são adicionados conforme os projetos ganham versões demonstráveis.
+Em evolução contínua. Novos cases, melhorias de SEO, performance e conteúdo são adicionados conforme o portfólio cresce.
