@@ -4,6 +4,22 @@
     {
       "source": "/og-image.jpg",
       "destination": "/api/og"
+    },
+    {
+      "source": "/projetos/academia",
+      "destination": "/projetos/academia.html"
+    },
+    {
+      "source": "/projetos/padua-floodsim",
+      "destination": "/projetos/padua-floodsim.html"
+    },
+    {
+      "source": "/projetos/winlab",
+      "destination": "/projetos/winlab.html"
+    },
+    {
+      "source": "/projetos/maes-que-oram",
+      "destination": "/projetos/maes-que-oram.html"
     }
   ]
 }

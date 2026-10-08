@@ -281,3 +281,19 @@ Desenvolvimento na branch `feat/portfolio-v2-1-foundation`, sem merge automátic
 ## Status
 
 Em evolução contínua. A vitrine é atualizada quando projetos ganham uma versão suficientemente demonstrável ou quando mudanças relevantes alteram o que vale apresentar profissionalmente.
+
+
+## V2.2 — Estudos de caso individuais
+
+A branch `feat/portfolio-v2-2-case-studies` prepara quatro cases individuais:
+
+- `/projetos/academia` — Plataforma de Gestão para Academia
+- `/projetos/padua-floodsim` — Pádua FloodSim
+- `/projetos/winlab` — WinLab Configurator
+- `/projetos/maes-que-oram` — Mães que Oram — Landing Page
+
+Cada case documenta contexto, desafio, decisões, escopo implementado, limites e próximos passos. As páginas usam um template HTML/CSS compartilhado, SEO próprio, metadados OG e entradas no sitemap; não exigem framework ou banco de dados.
+
+**Evidência visual:** os diagramas são rotulados como esquemáticos, e nunca representados como prints da aplicação. Nos projetos públicos, há links para o produto real e uma prévia externa carregada apenas por ação do visitante. Mães que Oram inclui imagens oficiais do próprio site. Capturas de dashboards restritos e dados de alunos serão incorporadas somente após anonimização e revisão explícita.
+
+**Status do deploy:** revisão por pull request e preview antes de promoção para produção.
