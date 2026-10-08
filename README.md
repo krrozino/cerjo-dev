@@ -266,6 +266,18 @@ Alterações enviadas para `main` geram deploy automático de produção.
 └── README.md
 ```
 
+## Portfolio V2.1 — Home e descoberta
+
+Desenvolvimento na branch `feat/portfolio-v2-1-foundation`, sem merge automático para produção.
+
+- Hero prioriza software real, sem iframe pesado.
+- Navegação separada para clientes e equipes de tecnologia.
+- Quatro projetos selecionados em destaque e catálogo completo recolhível.
+- Filtros por produtos, web/clientes, pesquisa e experiências.
+- Links de contato por e-mail, Instagram, LinkedIn e GitHub.
+- Zero dependências novas ou backend adicional nesta fase.
+- Fase seguinte: screenshots reais e estudos de caso dedicados.
+
 ## Status
 
 Em evolução contínua. A vitrine é atualizada quando projetos ganham uma versão suficientemente demonstrável ou quando mudanças relevantes alteram o que vale apresentar profissionalmente.
