@@ -301,7 +301,8 @@ h1{font:800 clamp(46px,5.5vw,76px)/1.055 var(--display);letter-spacing:-.085em;m
  .brand-mark{height:32px;width:32px;font-size:16px}
  .brand strong{font-size:17px}
  .brand small{display:none}
- .nav nav{gap:10px;justify-content:space-between;flex:1}
+ /* On narrow screens the case navigation gets a dedicated second row. */
+ .nav nav{flex:0 0 100%;width:100%;min-width:0;gap:10px;justify-content:space-between}
  .nav nav a{font-size:10px}
  .nav nav a:last-child{padding:8px 11px}
  .breadcrumbs{padding:20px 0 8px;font-size:10px}
