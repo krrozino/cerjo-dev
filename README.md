@@ -13,18 +13,14 @@ O cerjo.dev funciona como apresentação profissional, portfólio de projetos e 
 
 ## O que o site apresenta
 
-- apresentação profissional
-- serviços de desenvolvimento web
-- trabalho entregue para cliente
-- produtos web e mobile
-- automação para Windows
-- projetos acadêmicos e geoespaciais
-- pesquisa em visão computacional
-- experiências web interativas
+- apresentação profissional com texto e contexto pessoal
+- quatro estudos de caso selecionados, sem duplicação no catálogo
+- imagens reais de produto, com dados pessoais anonimizados
+- catálogo de projetos complementares, incluindo experiências públicas e repositórios privados claramente indicados
+- trabalho entregue para cliente e serviços de desenvolvimento web
+- produtos web e mobile, automação para Windows e pesquisa aplicada
 - tecnologias utilizadas
-- processo de trabalho
-- FAQ comercial
-- layout responsivo
+- layout responsivo com foco visível e suporte à navegação por teclado
 - SEO técnico básico com canonical
 - metadados Open Graph e Twitter
 - social preview 1200×630 com arte própria
