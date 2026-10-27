@@ -80,3 +80,25 @@ h1{font-size:clamp(43px,5vw,72px);line-height:1.04;margin:18px 0 23px}
 @media(max-width:900px){.case-hero{grid-template-columns:1fr;gap:25px}.story-grid{grid-template-columns:1fr}.facts{padding-bottom:55px}.flow-nodes{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.wrap{width:min(100% - 30px,1130px)}.nav{min-height:70px}.nav nav{gap:12px}.nav nav a{font-size:11px}.brand small{display:none}.brand strong{font-size:16px}.brand-mark{width:36px;height:36px;font-size:19px}.case-hero{padding:35px 0 47px}.lead{font-size:15px}.facts,.capabilities,.status-grid,.related{grid-template-columns:1fr}.facts{gap:7px}.section{padding:59px 0}.flow-nodes{grid-template-columns:1fr 1fr;margin:25px 0}.flow-node{min-height:130px;padding:12px}.flow-node strong{font-size:15px}.evidence-visual{padding:17px}.evidence-top,.evidence-foot{font-size:8px}.live-copy,.cta{flex-direction:column;align-items:flex-start}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item.large{grid-column:span 2;grid-row:auto}.gallery-item.large img{height:260px}.gallery-item img{height:170px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Case público: prévia interativa da landing page sem elementos de produção copiados. */
+.case-live-preview .section-heading{max-width:850px}
+.preview-browser{border:1px solid #3b4260;border-radius:19px;overflow:hidden;background:#0b111c;box-shadow:0 24px 70px #0005}
+.preview-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;padding:15px 18px;background:linear-gradient(105deg,#141b2b,#141525);border-bottom:1px solid #303a50}
+.preview-browser-meta{display:flex;align-items:center;gap:14px;min-width:0}
+.preview-browser-dots{display:flex;gap:5px;flex-shrink:0}.preview-browser-dots i{height:8px;width:8px;border-radius:50%;background:#64748b;display:block}.preview-browser-dots i:first-child{background:#ed8895}.preview-browser-dots i:nth-child(2){background:#eac17a}.preview-browser-dots i:nth-child(3){background:#7dcba6}
+.preview-browser-address{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#b0c1d6;font-size:11px;letter-spacing:.01em}
+.preview-devices{display:flex;gap:5px;padding:4px;border:1px solid #324257;border-radius:10px;background:#0b1421}
+.preview-device{border:0;border-radius:7px;background:transparent;color:#9bb3cb;cursor:pointer;min-height:36px;padding:8px 15px;font:700 11px Inter,system-ui,sans-serif}
+.preview-device[aria-pressed="true"]{background:#e6eefb;color:#152538;box-shadow:0 2px 8px #0004}
+.preview-stage{display:flex;justify-content:center;align-items:flex-start;min-height:610px;padding:16px;background:radial-gradient(circle at 50% 0%,#56314e50,transparent 65%),#070d16}
+.preview-viewport{width:100%;max-width:100%;background:#fff;border:1px solid #596477;border-radius:10px;overflow:hidden;box-shadow:0 16px 42px #0009;transition:width .2s ease}
+.preview-viewport iframe{display:block;border:0;width:100%;height:615px;background:#fff}
+.preview-browser.is-mobile .preview-viewport{width:390px}
+.preview-browser.is-mobile .preview-viewport iframe{height:725px}
+.preview-footer{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:16px 20px;background:#0d1522;border-top:1px solid #304052}
+.preview-footer p{margin:0;max-width:670px;line-height:1.7;color:#a7bad0;font-size:11px}
+.preview-footer .button{flex-shrink:0}
+.preview-fallback{font-size:11px;color:#94a8bd;line-height:1.7;margin:15px 0 0}.preview-fallback a{color:#aad1ff}
+@media(max-width:650px){.preview-toolbar{padding:12px;gap:11px}.preview-browser-meta{width:100%}.preview-devices{width:100%;justify-content:stretch}.preview-device{flex:1}.preview-stage{padding:8px;min-height:520px}.preview-viewport iframe{height:540px}.preview-browser.is-mobile .preview-viewport{width:100%}.preview-browser.is-mobile .preview-viewport iframe{height:650px}.preview-footer{align-items:flex-start;flex-direction:column;padding:16px}.preview-footer .button{width:100%}}
+@media(prefers-reduced-motion:reduce){.preview-viewport{transition:none}}
