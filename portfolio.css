@@ -192,7 +192,7 @@ img,svg{display:block;max-width:100%}
  .wordmark-text{font-size:17px}
  .site-nav{gap:13px}
  .site-nav a{font-size:10px}
- .site-nav a:nth-child(2){display:none}
+ .site-nav a:nth-child(2){display:block}
  .site-nav .nav-contact{padding:9px 10px}
  .hero{padding:69px 0 59px;gap:43px}
  .hero h1{font-size:clamp(49px,13vw,68px)}
@@ -236,3 +236,24 @@ img,svg{display:block;max-width:100%}
  .footer-row{padding:25px 0;flex-direction:column;align-items:flex-start;min-height:auto;gap:9px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.action,.site-nav a,.preview-device,.archive-sign{transition:none!important}}
+
+/* Capas verdadeiras: painel do treinador e tela do aluno, dados anonimizados. */
+.featured-visual--real{background:#172429;min-height:440px}
+.featured-visual--real::before,.featured-visual--real::after{display:none}
+.real-shots{position:absolute;left:5.5%;right:5.5%;top:15%;bottom:15%}
+.real-shots figure{margin:0}
+.desktop-shot{position:absolute;top:5%;left:0;width:84%;height:85%;background:#0b0d0f;border:6px solid #344247;border-radius:11px;overflow:hidden;box-shadow:0 22px 55px rgba(0,0,0,.5)}
+.desktop-shot img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.phone-shot{position:absolute;top:-2%;right:0;width:28%;height:105%;border:6px solid #121619;border-radius:20px;background:#000;overflow:hidden;box-shadow:0 15px 38px rgba(0,0,0,.7)}
+.phone-shot img{width:100%;height:100%;object-fit:contain;object-position:center top;background:#000}
+.featured-visual--real .visual-top,.featured-visual--real .visual-bottom{position:relative;z-index:2;text-shadow:0 1px 10px #000}
+@media(max-width:560px){
+ .header-row{flex-wrap:wrap;padding-top:11px;gap:9px}
+ .site-nav{width:100%;margin-left:0;justify-content:space-between;padding-bottom:10px;gap:8px}
+ .site-nav a{font-size:11px}
+ .site-nav .nav-contact{padding:8px 12px}
+ .featured-visual--real{min-height:300px}
+ .real-shots{left:6%;right:6%;top:18%;bottom:14%}
+ .desktop-shot{border-width:4px;border-radius:6px}
+ .phone-shot{border-width:4px;border-radius:11px}
+}
