@@ -20,7 +20,7 @@
 <section class="facts" aria-label="Características do projeto"><div><strong>02</strong><span>experiências de uso: treinador e aluno</span></div><div><strong>Offline-first</strong><span>no fluxo de treino do aluno</span></div><div><strong>Teste + regras</strong><span>validação de domínio e Firestore</span></div></section>
 <section class="section story" aria-labelledby="story-title"><div class="section-heading"><span class="eyebrow">CONTEXTO &amp; DESENVOLVIMENTO</span><h2 id="story-title">Do problema à solução</h2></div><div class="story-grid"><article><span class="step">01 / O CONTEXTO</span><h3>O desafio</h3><p>Prescrever, consultar e acompanhar treinos envolve diferentes perfis de usuário, regras de progressão e situações em que a conexão não está disponível. O desafio é manter uma experiência prática sem perder consistência dos dados.</p></article><article><span class="step">02 / O CAMINHO</span><h3>A solução</h3><p>A solução separa o painel do treinador (Next.js) da experiência do aluno (React Native/Expo), usando Firebase/Firestore, regras de acesso e testes de domínio. O fluxo do aluno contempla acompanhamento de cargas e sessões com diferentes exercícios em andamento.</p></article><article><span class="step">03 / MINHA ATUAÇÃO</span><h3>O trabalho desenvolvido</h3><p>Desenvolvimento e evolução da aplicação web/mobile; trabalho com fluxos de produto, interface, integração, testes e homologação.</p></article></div></section>
 <section class="section" aria-labelledby="features-title"><div class="section-heading"><span class="eyebrow">FUNCIONALIDADES &amp; DECISÕES</span><h2 id="features-title">O que foi construído</h2></div><div class="capabilities"><article class="capability"><span class="cap-index">01</span><h3>Trabalho do treinador</h3><p>Cadastro e gestão de alunos, catálogo de exercícios, fichas arrastáveis e controle de periodização.</p></article><article class="capability"><span class="cap-index">02</span><h3>Aplicação do aluno</h3><p>Cronômetro, consulta do treino, registro de cargas, histórico e acompanhamento de progressões.</p></article><article class="capability"><span class="cap-index">03</span><h3>Treinos e Powerlifting</h3><p>Progressão de semanas e suporte a sessões com múltiplos exercícios em andamento.</p></article><article class="capability"><span class="cap-index">04</span><h3>Qualidade e ambientes</h3><p>Testes unitários/de domínio e das Security Rules no Emulator; ambientes de produção e homologação separados.</p></article></div></section>
-<section class="section evidence" aria-labelledby="evidence-title"><div class="section-heading"><span class="eyebrow">VISÃO DO PROJETO</span><h2 id="evidence-title">Entendendo o fluxo</h2><p>O esquema a seguir resume a conexão entre os fluxos de treinador e aluno. Abaixo dele, veja capturas reais da interface do aluno.</p></div><div class="evidence-visual sky" role="img" aria-label="Diagrama esquemático das quatro etapas do projeto AcademiaApp">
+<section class="section evidence" aria-labelledby="evidence-title"><div class="section-heading"><span class="eyebrow">VISÃO DO PROJETO</span><h2 id="evidence-title">Entendendo o fluxo</h2><p>O esquema a seguir resume a conexão entre os fluxos de treinador e aluno. Abaixo dele, veja as capturas das experiências mobile e desktop.</p></div><div class="evidence-visual sky" role="img" aria-label="Diagrama esquemático das quatro etapas do projeto AcademiaApp">
  <div class="evidence-top"><span>VISÃO CONCEITUAL · NÃO É SCREENSHOT</span><span>cerjo.dev / academia</span></div>
  <div class="flow-nodes"><div class="flow-node"><small>01</small><strong>Treinador</strong><span>prescreve e organiza</span></div><div class="flow-node"><small>02</small><strong>Firebase</strong><span>identidade e dados</span></div><div class="flow-node"><small>03</small><strong>Aluno</strong><span>acompanha e registra</span></div><div class="flow-node"><small>04</small><strong>Qualidade</strong><span>testes e homologação</span></div></div><div class="evidence-foot"><span>BASEADO NA IMPLEMENTAÇÃO / DOCUMENTAÇÃO</span><span>↗</span></div>
  </div></section>
@@ -61,7 +61,48 @@
   <p class="gallery-disclaimer">As imagens documentam a interface do aplicativo e não representam dados de terceiros. Toque ou clique em uma captura para ampliar.</p>
 </section>
 
-<section class="section" aria-labelledby="status-title"><div class="section-heading"><span class="eyebrow">STATUS SEM EXAGERO</span><h2 id="status-title">O que existe e o que vem depois</h2></div><div class="status-grid"><article><span class="eyebrow">AGORA</span><h3>Estado atual</h3><p>Plataforma utilizada em contexto real, com melhorias e validações contínuas. Nem todas as funcionalidades planejadas são apresentadas como concluídas.</p></article><article><span class="eyebrow">PRÓXIMOS PASSOS</span><h3>Evolução planejada</h3><p>Ampliar o registro visual dos fluxos do treinador, além de aprofundar as decisões de sincronização e usabilidade.</p></article></div><p class="ethics">Repositório do aplicativo privado. As capturas publicadas são da conta do próprio desenvolvedor; não são divulgados dados de terceiros ou credenciais.</p></section>
+<section class="section trainer-screens" aria-labelledby="trainer-screens-title">
+  <div class="section-heading">
+    <span class="eyebrow">INTERFACE REAL · EXPERIÊNCIA DO TREINADOR</span>
+    <h2 id="trainer-screens-title">O painel do treinador</h2>
+    <p>Aplicação web para organizar a rotina da academia: acompanhamento dos alunos, gerenciamento de planos, banco de exercícios e construção de fichas personalizadas. As capturas exibem telas fornecidas pelo desenvolvedor; identificações pessoais visíveis foram ocultadas.</p>
+  </div>
+  <div class="trainer-gallery" aria-label="Capturas de tela do painel web do treinador">
+    <figure class="trainer-shot trainer-shot--featured">
+      <a href="/assets/academiaapp/treinador-painel.webp" target="_blank" rel="noopener noreferrer" aria-label="Ampliar imagem: Painel do treinador">
+        <img src="/assets/academiaapp/treinador-painel.webp" alt="Painel web do treinador com visão geral dos alunos, áreas administrativas e orientação de acompanhamento" loading="lazy" decoding="async" width="1279" height="975">
+      </a>
+      <figcaption><strong>01 · Painel do treinador</strong><span>Visão geral, indicadores de alunos e acompanhamento de atividades.</span></figcaption>
+    </figure>
+    <figure class="trainer-shot trainer-shot--compact">
+      <a href="/assets/academiaapp/treinador-alunos.webp" target="_blank" rel="noopener noreferrer" aria-label="Ampliar imagem: Gestão de alunos">
+        <img src="/assets/academiaapp/treinador-alunos.webp" alt="Tabela de gestão de alunos com campos de identificação ocultados e colunas de planos e matrícula" loading="lazy" decoding="async" width="901" height="307">
+      </a>
+      <figcaption><strong>02 · Gestão de alunos</strong><span>Planos, status e organização dos alunos; identificadores ocultados.</span></figcaption>
+    </figure>
+    <figure class="trainer-shot trainer-shot--compact">
+      <a href="/assets/academiaapp/treinador-acoes.webp" target="_blank" rel="noopener noreferrer" aria-label="Ampliar imagem: Ações administrativas">
+        <img src="/assets/academiaapp/treinador-acoes.webp" alt="Tabela de ações administrativas dos alunos com botões de atribuição de ficha, ajuste de cargas e métricas" loading="lazy" decoding="async" width="901" height="307">
+      </a>
+      <figcaption><strong>03 · Ações administrativas</strong><span>Atribuição de fichas, ajuste de cargas e acesso às avaliações.</span></figcaption>
+    </figure>
+    <figure class="trainer-shot">
+      <a href="/assets/academiaapp/treinador-exercicios.webp" target="_blank" rel="noopener noreferrer" aria-label="Ampliar imagem: Banco de exercícios">
+        <img src="/assets/academiaapp/treinador-exercicios.webp" alt="Banco de exercícios do treinador com busca, categorias e cards descritivos" loading="lazy" decoding="async" width="901" height="800">
+      </a>
+      <figcaption><strong>04 · Banco de exercícios</strong><span>Catálogo pesquisável com categorias e exercícios personalizados.</span></figcaption>
+    </figure>
+    <figure class="trainer-shot">
+      <a href="/assets/academiaapp/treinador-fichas.webp" target="_blank" rel="noopener noreferrer" aria-label="Ampliar imagem: Fichas padrão">
+        <img src="/assets/academiaapp/treinador-fichas.webp" alt="Editor de templates de treino com banco de exercícios e área para organizar a ficha" loading="lazy" decoding="async" width="844" height="883">
+      </a>
+      <figcaption><strong>05 · Fichas padrão</strong><span>Montagem de treinos por divisão, com banco de exercícios e organização das rotinas.</span></figcaption>
+    </figure>
+  </div>
+  <p class="gallery-disclaimer">As capturas ilustram telas e funcionalidades da aplicação; contagens e estados mostrados não são indicadores públicos da operação. Clique em uma imagem para ampliá-la.</p>
+</section>
+
+<section class="section" aria-labelledby="status-title"><div class="section-heading"><span class="eyebrow">STATUS SEM EXAGERO</span><h2 id="status-title">O que existe e o que vem depois</h2></div><div class="status-grid"><article><span class="eyebrow">AGORA</span><h3>Estado atual</h3><p>Plataforma utilizada em contexto real, com melhorias e validações contínuas. Nem todas as funcionalidades planejadas são apresentadas como concluídas.</p></article><article><span class="eyebrow">PRÓXIMOS PASSOS</span><h3>Evolução planejada</h3><p>Ampliar a documentação técnica e continuar aprimorando sincronização, segurança e usabilidade conforme a validação do produto.</p></article></div><p class="ethics">Repositório do aplicativo privado. As capturas do aluno são da conta do próprio desenvolvedor; nomes e e-mails identificáveis nas telas do treinador foram ocultados. Credenciais não são exibidas.</p></section>
 
 <section class="section more" aria-label="Outros projetos"><div class="section-heading"><span class="eyebrow">CONTINUE EXPLORANDO</span><h2>Outros cases</h2></div><div class="related"><a href="/projetos/padua-floodsim"><span>Pesquisa acadêmica · Geotecnologia</span><strong>FloodSim</strong><em>Ver case ↗</em></a><a href="/projetos/winlab"><span>Ferramenta de engenharia · Automação Windows</span><strong>WinLab</strong><em>Ver case ↗</em></a><a href="/projetos/maes-que-oram"><span>Cliente real · Presença digital</span><strong>Mães que Oram</strong><em>Ver case ↗</em></a></div></section>
 <section class="cta"><div><span class="eyebrow">VAMOS CONVERSAR?</span><h2>Precisa de uma solução com esse tipo de cuidado?</h2><p>Posso ajudar a pensar em uma aplicação adequada ao seu contexto.</p></div><a class="button primary" href="mailto:krrozino@gmail.com?subject=Contato%20pelo%20cerjo.dev">Enviar e-mail ↗</a></section>
